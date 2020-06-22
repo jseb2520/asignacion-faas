@@ -2,6 +2,7 @@
 
 # Create KinD cluster
 kind create cluster --name openfaas
+kubectl cluster-info --context kind-openfaas
 
 # Create a ServiceAccount for Tiller
 kubectl -n kube-system create sa tiller \

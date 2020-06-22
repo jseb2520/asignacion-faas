@@ -14,8 +14,5 @@ curl -Lo ./kind "https://kind.sigs.k8s.io/dl/v0.8.1/kind-$(uname)-amd64" && chmo
 mkdir -p /usr/local/bin/
 sudo install kind /usr/local/bin/
 
-# Create KinD cluster
-kind create cluster --name openfaas
-
 # Install OpenFaaS CLI
 curl -SLsf https://cli.openfaas.com | sudo sh
