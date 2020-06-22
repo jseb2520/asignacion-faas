@@ -25,7 +25,7 @@ const sleep = require('./utils').sleep;
 const TIMEOUT_BETWEEN_EPOCHS_MS = 500;
 const PORT = 8001;
 
-export default async function run() {
+async function run() {
   const port = process.env.PORT || PORT;
   const server = http.createServer();
   const io = socketio(server);
@@ -62,4 +62,4 @@ export default async function run() {
 
 }
 
-
+run();

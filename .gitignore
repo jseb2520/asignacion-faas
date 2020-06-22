@@ -106,3 +106,5 @@ dist
 codealike.json
 template
 build
+# Vagrant build
+.vagrant/
