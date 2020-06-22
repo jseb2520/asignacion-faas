@@ -1,3 +1,12 @@
+#!/usr/bin/env bash
+#
+# Script to create inlet exit node in GCE
+#
+# NOTE:  GCP project must be created and marked as current project on gcloud CLI before running this script.
+#
+# CREATED BY: Johan Sebastián Hernández
+#
+
 # Get current projectID
 export PROJECTID=$(gcloud config get-value core/project 2>/dev/null)
 
